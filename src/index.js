@@ -1,9 +1,11 @@
+import './style.css';
+
 function component() {
 
     const element = document.createElement('div');
 
     // Loadash installed via script tag (wordpress dependency)
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = 'Hello Twitch.tv';
     element.classList.add('hello');
     
     return element;

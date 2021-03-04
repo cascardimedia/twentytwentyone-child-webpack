@@ -32,7 +32,9 @@ function my_theme_enqueue_styles() {
         $theme->get('Version') // this only works if you have Version in the style header
     );
 
-    wp_enqueue_script('webpack-main', get_stylesheet_directory_uri() . '/dist/main.js',
+
+    // Webpack bundle injects CSS styles as well, see webpack.config.js
+    wp_enqueue_script('webpack-bundle', get_stylesheet_directory_uri() . '/dist/bundle.js',
 		      ['lodash'], '1.0', true);
 }
 

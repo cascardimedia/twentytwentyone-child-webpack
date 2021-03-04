@@ -1,5 +1,11 @@
 /* Top level CSS styles */
 
+/* Just appended this div to the bottom of the page */
 .hello {
-  color: red;
+    width: 100%;
+    background-color:purple;
+    color:black;
+    height: 3rem;
+    text-align:center;
+    border: 1px solid;
 }
