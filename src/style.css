@@ -3,9 +3,13 @@
 /* Just appended this div to the bottom of the page */
 .hello {
     width: 100%;
-    background-color:purple;
     color:black;
     height: 3rem;
     text-align:center;
     border: 1px solid;
+    max-width:270px;
+    padding: 0 30px;
+
+    margin: 0 30px;
+
 }

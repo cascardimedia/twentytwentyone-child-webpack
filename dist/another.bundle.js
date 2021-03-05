@@ -7,26 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/another-module.js":
-/*!*******************************!*\
-  !*** ./src/another-module.js ***!
-  \*******************************/
-/***/ (() => {
-
-eval("// This will load another module \n\n// Done\nconsole.log('Another module is loaded');\n\n\n//# sourceURL=webpack://twentytwentyone-child-webpack/./src/another-module.js?");
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/another-module.js"]();
-/******/ 	
+/******/ 	"use strict";
+var __webpack_exports__ = {};
 /******/ })()
 ;
