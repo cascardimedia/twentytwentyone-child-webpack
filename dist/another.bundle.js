@@ -15,7 +15,7 @@
   \*******************************/
 /***/ (() => {
 
-eval("console.log('Another module is loaded');\n\n\n//# sourceURL=webpack://twentytwentyone-child-webpack/./src/another-module.js?");
+eval("// This will load another module \n\n// Done\nconsole.log('Another module is loaded');\n\n\n//# sourceURL=webpack://twentytwentyone-child-webpack/./src/another-module.js?");
 
 /***/ })
 
