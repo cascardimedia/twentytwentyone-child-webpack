@@ -32,15 +32,14 @@ function my_theme_enqueue_styles() {
         $theme->get('Version') // this only works if you have Version in the style header
     );
 
-
-    // Webpack bundle injects CSS styles as well, see webpack.config.js
-    wp_enqueue_script('webpack-index-bundle', get_stylesheet_directory_uri() . '/dist/index.bundle.js',
-		      ['lodash'], '1.0', true);
-    // Webpack bundle injects CSS styles as well, see webpack.config.js
-    wp_enqueue_script('webpack-another-bundle', get_stylesheet_directory_uri() . '/dist/another.bundle.js',
-		      ['lodash'], '1.0', true);
-
+    // Automated script enqueue based on script tags in ./dist/index.html
 }
 
+// Hack for injecting script files (from index.html where they were emitted)
+add_action('wp_head', function() {
+    $path = get_stylesheet_directory_uri() .'/dist/';
+    ?>
+    <script defer src="<?php echo $path; ?>runtime.26c291801d7a62478c85.js"></script><script defer src="<?php echo $path; ?>index.fe51ec447bab280acc1c.js"></script><?php
+  });
 
 // EOF

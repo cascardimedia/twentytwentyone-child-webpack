@@ -1,4 +1,5 @@
 import './style.css';
+import Print from './print';
 
 function component() {
 
@@ -9,6 +10,7 @@ function component() {
 
     element.innerHTML = '<a href="https://twitch.tv/">Hello Twitch.tv</a>';
     element.classList.add('hello');
+    element.onclick = Print.bind('Hello Twitch.tv');
     
     return element;
 }
